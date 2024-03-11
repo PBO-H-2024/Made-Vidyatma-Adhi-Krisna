@@ -48,6 +48,7 @@ public class Main {
                     Tabung tabung = new Tabung(tinggi, jari);
                     System.out.printf("\nVolume Tabung : " + "%.2f", tabung.volume());
                     System.out.printf("\nLuas Permukaan Tabung : " +  "%.2f", tabung.luasPermukaan());
+                    System.out.println("a");
                     break;
                 case 2:
                     System.out.println("\nPROGRAM LIMAS SEGITIGA");
