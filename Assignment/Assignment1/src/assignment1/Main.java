@@ -65,13 +65,7 @@ public class Main {
                     System.out.println("Invalid. Input Again");
                     break;
             }
-            System.out.print("\n\nLoading.");
-            Thread.sleep(500);    
-            System.out.print(".");
-            Thread.sleep(500);    
-            System.out.println(".");
-            Thread.sleep(1000);    
-            System.out.print("Press Any Key To Continue...");
+            System.out.print("\n\nPress Any Key To Continue...");
             new java.util.Scanner(System.in).nextLine();
             
         }
