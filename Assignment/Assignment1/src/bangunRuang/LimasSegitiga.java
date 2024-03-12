@@ -10,16 +10,14 @@ import bangunDatar.Segitiga;
  *
  * @author ASUS
  */
-public class LimasSegitiga extends Segitiga{
+public class LimasSegitiga extends Segitiga implements HitungRuang{
     double tinggi_limas;
     public LimasSegitiga(double t, double a, double tinggi_segitiga){
         super(a,tinggi_segitiga);
         this.tinggi_limas = t;
-        System.out.println("Alas Segitiga : " + alas);
-        System.out.println("Tinggi Segitiga : " + tinggi_segitiga);
-        System.out.println("Tinggi Limas Segitiga : " + tinggi_limas);
-        System.out.println("\nLuas Segitiga : " + hitungLuas());
-        System.out.println("Keliling Segitiga : " + hitungKeliling());
+        System.out.println("\nOUTPUT");
+        System.out.println("Luas Segitiga : " + hitungLuas());
+        System.out.printf("Keliling Segitiga : " + "%.2f",hitungKeliling());
     }
     public double volume(){
         return  (hitungLuas() * tinggi_limas) / 3;

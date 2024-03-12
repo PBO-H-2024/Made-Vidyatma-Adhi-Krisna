@@ -10,15 +10,14 @@ import bangunDatar.Lingkaran;
  *
  * @author ASUS
  */
-public class Tabung extends Lingkaran{
+public class Tabung extends Lingkaran implements HitungRuang{
     double tinggi;
     public Tabung(double t, double r){
         super(r);
         this.tinggi = t;
-        System.out.println("Tinggi Tabung : " + tinggi);
-        System.out.println("Jari-Jari Tabung : " + jari);
-        System.out.println("\nLuas Lingkaran : " + hitungLuas());
-        System.out.printf("Keliling Lingkaran : " + "%.2f",hitungKeliling());
+        System.out.println("\nOUTPUT");
+        System.out.printf("Luas Lingkaran : " + "%.2f",hitungLuas());
+        System.out.printf("\nKeliling Lingkaran : " + "%.2f",hitungKeliling());
     }
     public double volume(){
         return hitungLuas() * tinggi;

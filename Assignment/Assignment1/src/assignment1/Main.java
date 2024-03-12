@@ -58,8 +58,8 @@ public class Main {
                     System.out.print("Input Tinggi Limas : ");
                     int tinggi_limas = scanner.nextInt();
                     LimasSegitiga limas = new LimasSegitiga(tinggi_limas, alas, tinggi_segitiga);
-                    System.out.println("Volume Limas : " + limas.volume());
-                    System.out.printf("Luas Permukaan Limas : " + limas.luasPermukaan());
+                    System.out.printf("\nVolume Limas : " + "%.2f",limas.volume());
+                    System.out.printf("\nLuas Permukaan Limas : " + limas.luasPermukaan());
                     break;
                 default:
                     System.out.println("Invalid. Input Again");
