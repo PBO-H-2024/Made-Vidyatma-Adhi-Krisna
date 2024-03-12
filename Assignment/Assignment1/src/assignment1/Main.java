@@ -67,9 +67,6 @@ public class Main {
             }
             System.out.print("\n\nPress Any Key To Continue...");
             new java.util.Scanner(System.in).nextLine();
-            
         }
-       
     }
-    
 }
