@@ -17,7 +17,7 @@ public class Segitiga implements HitungBidang{
         
     }
     public double getTinggi() {
-        return Math.sqrt( (a*a) - (alas/2)*(alas/2) );
+        return Math.sqrt( (a*a) - (alas/2)*(alas/2) ); //get tinggi dengan rumus pythagoras
     }
     public double hitungLuas(){
         return(alas * getTinggi()) / 2;
