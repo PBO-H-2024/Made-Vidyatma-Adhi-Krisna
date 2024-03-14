@@ -9,16 +9,20 @@ package bangunDatar;
  * @author ASUS
  */
 public class Segitiga implements HitungBidang{
-    public double alas, tinggi_segitiga;
-    public Segitiga(double a, double t){
-        this.alas = a;
-        this.tinggi_segitiga = t;
+    public double a,b,alas;
+    public Segitiga(double a, double b, double alas){
+        this.a = a;
+        this.b = b;
+        this.alas = alas;
+        
+    }
+    public double getTinggi() {
+        return Math.sqrt( (a*a) - (alas/2)*(alas/2) );
     }
     public double hitungLuas(){
-        return alas * tinggi_segitiga * 0.5;
-    }
+        return(alas * getTinggi()) / 2;
+    };
     public double hitungKeliling(){
-        double sisiMiring = Math.sqrt(((0.5) * alas * (0.5) * alas) + (tinggi_segitiga * tinggi_segitiga));
-        return alas + tinggi_segitiga + sisiMiring;
+        return alas + a + b;
     }
 }
