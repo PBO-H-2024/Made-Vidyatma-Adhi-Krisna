@@ -63,6 +63,9 @@ public class Main {
                             System.out.print("Input Sisi : ");
                             int sisi = scanner.nextInt();
                             LimasSegitiga segitigaSisi = new LimasSegitiga(sisi, sisi, sisi, tinggi_limas);
+                            System.out.printf("Tinggi Segitiga : " + "%.2f",segitigaSisi.getTinggi());
+                            System.out.printf("\nLuas Segitiga : " + "%.2f", segitigaSisi.hitungLuas());
+                            System.out.printf("\nKeliling Segitiga : " + "%.2f", segitigaSisi.hitungKeliling());
                             System.out.printf("\nVolume Limas : " + "%.2f", segitigaSisi.volume());
                             System.out.printf("\nLuas Permukaan Limas : " +  "%.2f", segitigaSisi.luasPermukaan());
                             invalid = false;
@@ -76,6 +79,9 @@ public class Main {
                             System.out.print("Input Alas : ");
                             int alas = scanner.nextInt();
                             LimasSegitiga segitigaKaki = new LimasSegitiga(kaki, kaki, alas, tinggi_limas);
+                            System.out.println("Tinggi Segitiga : " + segitigaKaki.getTinggi());
+                            System.out.printf("Luas Segitiga : " + "%.2f", segitigaKaki.hitungLuas());
+                            System.out.printf("\nKeliling Segitiga : " + "%.2f", segitigaKaki.hitungKeliling());
                             System.out.printf("\nVolume Limas : " + "%.2f", segitigaKaki.volume());
                             System.out.printf("\nLuas Permukaan Limas : " + "%.2f",  segitigaKaki.luasPermukaan());
                             invalid = false;
@@ -85,15 +91,18 @@ public class Main {
                             System.out.println("Segitiga Sembarang");
                             System.out.print("Input Tinggi Limas : ");
                             int tinggi_limas = scanner.nextInt();
-                            System.out.println("Input A");
+                            System.out.printf("Input A : ");
                             int a = scanner.nextInt();
-                            System.out.println("Input B");
+                            System.out.printf("Input B : ");
                             int b = scanner.nextInt();
-                            System.out.println("Input C");
+                            System.out.printf("Input C : ");
                             int c = scanner.nextInt();
                             LimasSegitiga segitigaSembarang = new LimasSegitiga(a, b, c, tinggi_limas);
-                            System.out.printf("\nVolume Limas : " + "%.2f", segitigaSembarang.volume());
-                            System.out.printf("\nLuas Permukaan Limas : " + "%.2f",  segitigaSembarang.luasPermukaan());
+                            System.out.println("Segitiga sembarang tidak saya cari tinggi nya");
+                            System.out.printf("Luas Segitiga : " + "%.2f", segitigaSembarang.luasSegitigaSembarang());
+                            System.out.printf("\nKeliling Segitiga : " + "%.2f", segitigaSembarang.hitungKeliling());
+                            System.out.printf("\nVolume Limas : " + "%.2f", segitigaSembarang.volumeLimasSembarang());
+                            System.out.printf("\nLuas Permukaan Limas : " + "%.2f",  segitigaSembarang.luasPermukaanLimasSembarang());
                             invalid = false;
                         }
                         else{

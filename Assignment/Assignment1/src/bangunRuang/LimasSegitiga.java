@@ -11,20 +11,22 @@ import bangunDatar.Segitiga;
  * @author ASUS
  */
 public class LimasSegitiga extends Segitiga implements HitungRuang{
-    double tinggi_limas, luasPermukaanTegak;
-    public LimasSegitiga(double a, double b, double alas, double t) {
-        super(a, b, alas);
+    double tinggi_limas;
+    public LimasSegitiga(double a, double b, double c, double t) { // c adalah alas
+        super(a, b, c);
         this.tinggi_limas = t;
         System.out.println("\nOUTPUT");
-        System.out.println("Tinggi Segitiga : " + getTinggi());
-        System.out.printf("Luas Segitiga : " + "%.2f",hitungLuas());
-        System.out.printf("\nKeliling Segitiga : " + "%.2f",hitungKeliling());
     }
     public double volume(){
         return (hitungLuas() * tinggi_limas) / 3;
     }
     public double luasPermukaan(){
-        luasPermukaanTegak = hitungLuas() * 3 ;
-        return luasPermukaanTegak + hitungLuas();
+        return hitungLuas() + (tinggi_limas/2) + (a+b+c); //luas alas + luas selubung
+    }
+    public double volumeLimasSembarang(){
+        return (luasSegitigaSembarang() * tinggi_limas) / 3; //menggunakan luas yang pakai rumus heron karena tidak bisa pythagoras
+    }
+    public double luasPermukaanLimasSembarang(){
+        return luasSegitigaSembarang() + ( (tinggi_limas/2) * (a+b+c) );
     }
 }
