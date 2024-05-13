@@ -20,7 +20,6 @@ public class UpdateData extends JFrame {
 
     JButton btnUpdate = new JButton("UPDATE");
 
-    JLabel lResult = new JLabel();
 
     public UpdateData(Controller studentC, int id){
         this.updatedID = id;
@@ -32,7 +31,6 @@ public class UpdateData extends JFrame {
         window.add(lNim);
         window.add(lName);
         window.add(lAge);
-        window.add(lResult);
         window.add(fNim);
         window.add(fName);
         window.add(fAge);
@@ -42,7 +40,6 @@ public class UpdateData extends JFrame {
         lNim.setBounds(5, 35, 120, 20);
         lName.setBounds(5, 60, 120, 20);
         lAge.setBounds(5, 85, 120, 20);
-        lResult.setBounds(5, 110, 500, 20);
 
         
         //TEXTFIELD
@@ -55,7 +52,6 @@ public class UpdateData extends JFrame {
         
         btnUpdate.addActionListener((e) -> {
             studentC.updateData(updatedID, Integer.parseInt(fNim.getText()), fName.getText(), Integer.parseInt(fAge.getText()));
-            lResult.setText("Student with NIM : "+ Integer.parseInt(fNim.getText()) + " Data Updated successfully!");
             window.dispose();
         });
     }}

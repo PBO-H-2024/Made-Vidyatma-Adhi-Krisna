@@ -24,8 +24,6 @@ public class InputData extends JFrame {
 
     JButton btnAdd = new JButton("ADD");
 
-    JLabel lResult = new JLabel();
-
     public InputData(Controller studentC) {
         window.setLayout(null);
         window.setSize(500, 200);
@@ -35,7 +33,6 @@ public class InputData extends JFrame {
         window.add(lNim);
         window.add(lName);
         window.add(lAge);
-        window.add(lResult);
         window.add(fNim);
         window.add(fName);
         window.add(fAge);
@@ -45,7 +42,6 @@ public class InputData extends JFrame {
         lNim.setBounds(5, 35, 120, 20);
         lName.setBounds(5, 60, 120, 20);
         lAge.setBounds(5, 85, 120, 20);
-        lResult.setBounds(5, 110, 500, 20);
 
         // TEXTFIELD
         fNim.setBounds(150, 35, 120, 20);
@@ -57,7 +53,6 @@ public class InputData extends JFrame {
 
         btnAdd.addActionListener((e) -> {
             studentC.insertData(Integer.parseInt(fNim.getText()), fName.getText(), Integer.parseInt(fAge.getText()));
-            lResult.setText("Student with NIM : " + Integer.parseInt(fNim.getText()) + " Data Inserted successfully!");
             window.dispose();
         });
     }
