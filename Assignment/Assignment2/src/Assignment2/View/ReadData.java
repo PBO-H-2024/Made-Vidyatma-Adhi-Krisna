@@ -86,9 +86,10 @@ public class ReadData extends JFrame {
     }
 
     //biar otomatis refresh abis add, update or delete data
-    public void refreshTable() {
-        Controller studentC = new Controller();
-        data = studentC.readData();
-        table.setModel((new JTable(data, columnName)).getModel());
-    }
+    // public void refreshTable() {
+        
+    //     Controller studentC = new Controller();
+    //     data = studentC.readData();
+    //     table.setModel((new JTable(data, columnName)).getModel());
+    // }
 }

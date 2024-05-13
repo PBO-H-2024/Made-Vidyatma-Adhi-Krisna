@@ -13,7 +13,6 @@ import Assignment2.View.*;
 
 
 public class Main {
-
     /**
      * @param args the command line arguments
      */
