@@ -1,11 +1,9 @@
 package Assignment2.Controller;
 import javax.swing.JOptionPane;
 import Assignment2.Model.StudentModel;
-import Assignment2.View.ReadData;
 
 public class Controller  {
     StudentModel model;
-    ReadData view;
 
     public Controller() {
         this.model = new StudentModel(this);

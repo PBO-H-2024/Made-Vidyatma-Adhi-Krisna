@@ -10,8 +10,6 @@ import Assignment2.View.*;
  * @author ASUS
  */
 
-
-
 public class Main {
     /**
      * @param args the command line arguments
