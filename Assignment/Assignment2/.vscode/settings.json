@@ -1,0 +1,12 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "D:\\FILE\\Kuliah\\Semester 4\\MATERI PRAKTIKUM\\PBO\\COBA\\Pertemuan5\\Libraries",
+            "c:\\Program Files\\mysql-connector-java-8.0.22\\mysql-connector-java-8.0.22\\mysql-connector-java-8.0.22.jar"
+        ],
+        "exclude": [
+            "Libraries/mysql-connector-java-8.0.22.jar",
+            "c:\\Program Files\\mysql-connector-java-8.0.22\\mysql-connector-java-8.0.22\\mysql-connector-java-8.0.22.jar"
+        ]
+    }
+}
