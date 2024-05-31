@@ -117,7 +117,7 @@ public class Controller {
                 }
             }
         }
-        model.insertData(name, path, writingS, codingS, interviewS, totalScore, status);
+        model.updateData(name, path, writingS, codingS, interviewS, totalScore, status);
         JOptionPane.showMessageDialog(null, "Data Updated Successfully!");
     }
 
