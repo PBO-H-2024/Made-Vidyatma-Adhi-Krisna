@@ -70,7 +70,7 @@ public class Controller {
                 }
             }
         }
-        model.updateData(name, path, writingS, codingS, interviewS, totalScore, status);
+        model.insertData(name, path, writingS, codingS, interviewS, totalScore, status);
         JOptionPane.showMessageDialog(null, "Data Inserted Successfully!");
     }
 

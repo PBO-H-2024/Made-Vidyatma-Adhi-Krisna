@@ -55,6 +55,7 @@ public class RecruitModel extends Connector {
 
      // method untuk insert data baru ke dalam database
      public void insertData(String name, String path, double writing, double coding, double interview, double totalScore, String status ) {
+        System.out.println(name + path + writing + coding + interview + totalScore + status);
         try {
             String query = "INSERT INTO `recruitment`(`name`,`path`,`writing`,`coding`,`interview`,`score`,`status`) VALUES ('" + name + "','" + path + "','" + writing + "','" + coding + "','" + interview + "','" + totalScore + "','" + status + "')"; 
             statement = conn.createStatement();
